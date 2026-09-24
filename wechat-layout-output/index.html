@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>公众号排版预览 · ReadRoom 短文</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', Arial, sans-serif;
+    background: #f1f3f4;
+    min-height: 100vh;
+    padding: 24px 16px 64px;
+  }
+  .toolbar {
+    max-width: 717px;
+    margin: 0 auto 20px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    flex-wrap: wrap;
+  }
+  .toolbar h1 { font-size: 15px; color: #5f6368; font-weight: 600; flex: 1; min-width: 200px; }
+  .toolbar button {
+    background: #1a73e8;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    padding: 10px 20px;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+  }
+  .toolbar button:hover { background: #1765cc; }
+  #status {
+    max-width: 717px;
+    margin: 0 auto 12px;
+    font-size: 13px;
+    color: #1a73e8;
+    min-height: 18px;
+  }
+  .phone {
+    max-width: 677px;
+    margin: 0 auto;
+    background: #ffffff;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 2px 16px rgba(0,0,0,0.08);
+  }
+</style>
+</head>
+<body>
+
+<div class="toolbar">
+  <h1>公众号排版预览 · Google 风格（彩色卡片）· 成稿 v3</h1>
+  <button onclick="copyArticleHtml(document.getElementById('article'), document.getElementById('status'))">复制 HTML</button>
+</div>
+<div id="status"></div>
+
+<div class="phone">
+<section id="article" style="max-width:677px;margin:0 auto;padding:32px 24px 40px;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI','PingFang SC','Microsoft YaHei',Arial,sans-serif;color:#202124;font-size:16px;line-height:1.9;background:#ffffff;">
+
+  <!-- 标题卡：蓝色顶条 -->
+  <section style="border:1px solid #e8eaed;border-top:4px solid #1a73e8;border-radius:8px;padding:24px 20px 20px;margin-bottom:32px;background:#ffffff;">
+    <p style="display:inline-block;background:#e8f0fe;color:#1a73e8;font-size:12px;font-weight:600;padding:3px 10px;border-radius:4px;margin-bottom:14px;letter-spacing:1px;">READROOM · 产品构想</p>
+    <h1 style="font-size:22px;line-height:1.5;font-weight:700;color:#202124;">ReadRoom：职场小白必装的 1 个 AI 导师</h1>
+    <p style="font-size:13px;color:#5f6368;margin-top:12px;text-align:right;">空格的键盘</p>
+  </section>
+
+  <p style="margin:0 0 8px;">前两天晚上，一个在心里放了很久的念头，终于长成了一个完整的产品。</p>
+
+  <p style="margin:0 0 8px;">说实话，这个念头源于我工作这些年最真实的感觉：忙忙碌碌，回头看，带不走什么。</p>
+
+  <p style="margin:0 0 28px;">我想做一个 AI 职场导师。</p>
+
+  <p style="margin:0 0 8px;">工作这些年，一直没人带。</p>
+
+  <p style="margin:0 0 8px;">会开了一堆，活干了一堆。但每件事都是执行——没人告诉我，哪次汇报其实搞砸了，哪个判断其实很幼稚。</p>
+
+  <p style="margin:0 0 28px;">悟出来了，是运气。悟不出来，就在原地转圈。</p>
+
+  <p style="margin:0 0 12px;">原型已经能跑了。给大家提供一些我的玩法。</p>
+
+  <!-- 原型首页截图 -->
+  <section style="border:1px solid #d4e5d8;border-radius:8px;padding:8px;margin:12px 0 28px;background:#f7fbf8;">
+    <img src="assets/readroom-home.png" alt="ReadRoom 原型首页" style="display:block;width:100%;height:auto;border-radius:4px;">
+    <p style="text-align:center;font-size:13px;color:#5f6368;margin:8px 0 4px;">ReadRoom 原型，本地跑起来的样子</p>
+  </section>
+
+  <!-- 玩法一 -->
+  <p style="margin:0 0 12px;"><span style="display:inline-block;width:10px;height:10px;border-radius:3px;background:#1a73e8;margin-right:8px;"></span><span style="color:#1a73e8;font-weight:700;">玩法一：TA 有记忆。</span></p>
+
+  <p style="margin:0 0 8px;">它记得我的直属领导王总：<span style="background:#e6f4ea;border-radius:3px;padding:1px 4px;">结果导向，风险敏感</span>。不喜欢频繁 IM 催促，更接受带方案当面确认。</p>
+
+  <p style="margin:0 0 20px;">同样问"要不要催领导"，看看两边怎么答——</p>
+
+  <!-- 玩法一对话：气泡 + 外框 -->
+  <section style="border:1px solid #d4e5d8;border-radius:8px;padding:18px 16px 8px;margin:20px 0 28px;background:#f7fbf8;">
+    <p style="display:inline-block;background:#f1f3f4;color:#202124;border-radius:12px 12px 12px 4px;padding:10px 14px;margin:0 0 10px;max-width:88%;font-size:15px;line-height:1.75;"><span style="font-weight:700;color:#5f6368;">通用大模型</span>　视情况，注意语气。</p>
+    <p style="display:inline-block;background:#e8f0fe;color:#202124;border-radius:12px 12px 4px 12px;padding:10px 14px;margin:0 0 10px 12%;max-width:88%;font-size:15px;line-height:1.75;text-align:right;"><span style="font-weight:700;color:#1a73e8;">TA</span>　别发"王总这个看了吗"，直接把 A、B 两个方案和推荐一起发过去。</p>
+    <p style="display:inline-block;background:#f1f3f4;color:#202124;border-radius:12px 12px 12px 4px;padding:10px 14px;margin:0;max-width:88%;font-size:15px;line-height:1.75;"><span style="font-weight:700;color:#5f6368;">通用大模型</span>　（TA 不知道王总是谁）</p>
+  </section>
+
+  <p style="margin:0 0 28px;">相同的问题，不同的答案。</p>
+
+  <!-- 玩法二 -->
+  <p style="margin:0 0 12px;"><span style="display:inline-block;width:10px;height:10px;border-radius:3px;background:#1a73e8;margin-right:8px;"></span><span style="color:#1a73e8;font-weight:700;">玩法二：会议教练。</span></p>
+
+  <p style="margin:0 0 8px;">下午要跟老板汇报项目，我跟它说一声，它汇总项目历史和老板的关注点，给我一张<span style="background:#e6f4ea;border-radius:3px;padding:1px 4px;">作战卡</span>，上面列好了老板可能会问什么、我上次在哪里卡壳、开场先说什么。</p>
+
+  <p style="margin:0 0 20px;">开会的时候，它安静听，只在关键节点提醒——</p>
+
+  <!-- 玩法二会中提醒：气泡 + 外框 -->
+  <section style="border:1px solid #d4e5d8;border-radius:8px;padding:18px 16px 8px;margin:20px 0 20px;background:#f7fbf8;">
+    <p style="display:inline-block;background:#e8f0fe;color:#202124;border-radius:12px 12px 4px 12px;padding:10px 14px;margin:0 0 10px 12%;max-width:88%;font-size:15px;line-height:1.75;text-align:right;"><span style="font-weight:700;color:#1a73e8;">TA</span>　老板在追问时间，直接给日期。</p>
+    <p style="display:inline-block;background:#e8f0fe;color:#202124;border-radius:12px 12px 4px 12px;padding:10px 14px;margin:0;max-width:88%;font-size:15px;line-height:1.75;text-align:right;"><span style="font-weight:700;color:#1a73e8;">TA</span>　对方问的是"为什么延期"，别再铺垫项目背景。</p>
+  </section>
+
+  <p style="margin:0 0 20px;">会开完了，它会根据我的表现，告诉我哪里有问题——</p>
+
+  <!-- 玩法二会后复盘：气泡 + 外框 -->
+  <section style="border:1px solid #d4e5d8;border-radius:8px;padding:18px 16px 8px;margin:20px 0 28px;background:#f7fbf8;">
+    <p style="display:inline-block;background:#e8f0fe;color:#202124;border-radius:12px 12px 4px 12px;padding:10px 14px;margin:0;max-width:88%;font-size:15px;line-height:1.75;text-align:right;"><span style="font-weight:700;color:#1a73e8;">TA</span>　老板问"什么时候上线"，我用了 47 秒解释背景，最后没给出日期。</p>
+  </section>
+
+  <!-- 玩法三 -->
+  <p style="margin:0 0 12px;"><span style="display:inline-block;width:10px;height:10px;border-radius:3px;background:#1a73e8;margin-right:8px;"></span><span style="color:#1a73e8;font-weight:700;">玩法三：模拟职场。</span></p>
+
+  <p style="margin:0 0 20px;">它扮演老板来拷问我，题目是汇报"项目要延期一周"。我刚汇报完，它就开口——</p>
+
+  <!-- 对话实录：聊天气泡 + 外框 -->
+  <section style="border:1px solid #d4e5d8;border-radius:8px;padding:18px 16px 8px;margin:20px 0 28px;background:#f7fbf8;">
+    <p style="display:inline-block;background:#f1f3f4;color:#202124;border-radius:12px 12px 12px 4px;padding:10px 14px;margin:0 0 10px;max-width:88%;font-size:15px;line-height:1.75;"><span style="font-weight:700;color:#1a73e8;">TA</span>　这个项目为什么延期？</p>
+    <p style="display:inline-block;background:#e8f0fe;color:#202124;border-radius:12px 12px 4px 12px;padding:10px 14px;margin:0 0 10px 12%;max-width:88%;font-size:15px;line-height:1.75;text-align:right;"><span style="font-weight:700;color:#1a73e8;">我</span>　需求方中途改了两次方向，加上测试同学请了三天假，联调时间被压没了……</p>
+    <p style="display:inline-block;background:#f1f3f4;color:#202124;border-radius:12px 12px 12px 4px;padding:10px 14px;margin:0 0 10px;max-width:88%;font-size:15px;line-height:1.75;"><span style="font-weight:700;color:#1a73e8;">TA</span>　这些原因我都知道。我问的是，为什么没有提前发现？</p>
+    <p style="display:inline-block;background:#e8f0fe;color:#202124;border-radius:12px 12px 4px 12px;padding:10px 14px;margin:0 0 10px 12%;max-width:88%;font-size:15px;line-height:1.75;text-align:right;"><span style="font-weight:700;color:#202124;">我</span>　风险我在周报里提过一次，但没有单独跟您同步……</p>
+    <p style="display:inline-block;background:#f1f3f4;color:#202124;border-radius:12px 12px 12px 4px;padding:10px 14px;margin:0;max-width:88%;font-size:15px;line-height:1.75;"><span style="font-weight:700;color:#1a73e8;">TA</span>　所以，作为 owner，到底承担了什么责任？</p>
+  </section>
+
+  <p style="margin:0 0 8px;">三轮追问下来，我一句都接不上。</p>
+
+  <p style="margin:0 0 28px;">然后它复盘：最大的问题，我一直在解释原因。承担责任、给出方案，一句都没有。</p>
+
+  <!-- 金句卡：绿色顶条 -->
+  <section style="border:1px solid #e8eaed;border-top:4px solid #188038;border-radius:8px;padding:20px 18px;margin:24px 0 28px;background:#e6f4ea;text-align:center;">
+    <p style="font-size:17px;font-weight:700;color:#202124;letter-spacing:1px;margin:0;">现在，重新来一次。</p>
+  </section>
+
+  <p style="margin:0 0 8px;">这三个玩法，底下是同一套记忆：它记得我的老板、我的项目、我犯过的错。用得越久，它越懂我。</p>
+
+  <p style="margin:0 0 28px;">职场课是看完二十节视频。这个不一样：它观察真实工作，找到短板，给出训练。有没有用，下次开会就知道。</p>
+
+  <p style="margin:0 0 8px;">工作本身，就是训练场。</p>
+
+  <p style="margin:0 0 8px;">产品拆成了六个模块，这三个是我最想先做出来的。名字起好了，叫 ReadRoom。</p>
+
+  <p style="margin:0 0 28px;">这个东西有没有人要，我还不知道。</p>
+
+  <!-- 行动引导：绿色左边条 -->
+  <section style="border-left:4px solid #188038;background:#e6f4ea;border-radius:0 8px 8px 0;padding:14px 18px;margin:24px 0;">
+    <p style="margin:0;font-size:15px;color:#202124;">你要是也想被这样追问一次，评论区说一声。</p>
+  </section>
+
+</section>
+</div>
+
+<script>
+async function copyArticleHtml(articleNode, statusNode) {
+  const html = articleNode.innerHTML;
+  const text = articleNode.innerText;
+  try {
+    await navigator.clipboard.write([
+      new ClipboardItem({
+        "text/html": new Blob([html], { type: "text/html" }),
+        "text/plain": new Blob([text], { type: "text/plain" }),
+      }),
+    ]);
+    statusNode.textContent = "已复制 HTML，可以粘贴到公众号正文区域。";
+  } catch {
+    const range = document.createRange();
+    range.selectNode(articleNode);
+    const selection = window.getSelection();
+    selection.removeAllRanges();
+    selection.addRange(range);
+    document.execCommand("copy");
+    selection.removeAllRanges();
+    statusNode.textContent = "已用兼容模式复制当前预览内容。";
+  }
+}
+</script>
+
+</body>
+</html>
